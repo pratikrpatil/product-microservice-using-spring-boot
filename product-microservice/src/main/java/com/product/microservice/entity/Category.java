@@ -1,29 +1,32 @@
 package com.product.microservice.entity;
 
-import org.springframework.stereotype.Component;
+import javax.persistence.Embeddable;
 
-@Component
+
+@Embeddable
 public class Category {
 	
-	private int id;
-	private String name;
-	private String brand;
-	public int getId() {
-		return id;
+	private int categoryId;
+	private String categoryName;
+	private String categoryBrand;
+
+	public int getCategoryId() {
+		return categoryId;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setCategoryId(int categoryId) {
+		this.categoryId = categoryId;
 	}
-	public String getName() {
-		return name;
+	public String getCategoryName() {
+		return categoryName;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
 	}
-	public String getBrand() {
-		return brand;
+	public String getCategoryBrand() {
+		return categoryBrand;
 	}
-	public void setBrand(String brand) {
-		this.brand = brand;
+	public void setCategoryBrand(String categoryBrand) {
+		this.categoryBrand = categoryBrand;
 	}
+
 }

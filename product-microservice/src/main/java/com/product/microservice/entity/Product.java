@@ -11,9 +11,7 @@ public class Product {
 	@Id
 	private int id;
 	private String name;
-	
-//	@Autowired
-//	private Category category;
+	private Category category;
 	private double price;
 	private double discount;
 	public int getId() {
@@ -28,12 +26,12 @@ public class Product {
 	public void setName(String name) {
 		this.name = name;
 	}
-//	public Category getCategory() {
-//		return category;
-//	}
-//	public void setCategory(Category category) {
-//		this.category = category;
-//	}
+	public Category getCategory() {
+		return category;
+	}
+	public void setCategory(Category category) {
+		this.category = category;
+	}
 	public double getPrice() {
 		return price;
 	}
