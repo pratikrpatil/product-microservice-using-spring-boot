@@ -1,5 +1,8 @@
-package com.product.microservice.dto.model.entity;
+package com.product.microservice.entity;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Category {
 	
 	private int id;
@@ -23,7 +26,4 @@ public class Category {
 	public void setBrand(String brand) {
 		this.brand = brand;
 	}
-	
-	
-
 }

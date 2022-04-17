@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.product.microservice.dto.model.entity.Product;
+import com.product.microservice.entity.Product;
 import com.product.microservice.service.ProductService;
 
 @RestController
@@ -20,7 +20,6 @@ public class ProductController {
 	@RequestMapping("/addProduct")
 	public Product addProduct(@RequestBody Product product)
 	{
-		
 		return productService.saveProduct(product);
 	}
 

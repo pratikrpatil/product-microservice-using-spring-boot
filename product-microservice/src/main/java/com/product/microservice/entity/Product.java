@@ -1,13 +1,19 @@
-package com.product.microservice.dto.model.entity;
+package com.product.microservice.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import org.springframework.beans.factory.annotation.Autowired;
 
 @Entity
 public class Product {
 	
+	@Id
 	private int id;
 	private String name;
-	private Category category;
+	
+//	@Autowired
+//	private Category category;
 	private double price;
 	private double discount;
 	public int getId() {
@@ -22,12 +28,12 @@ public class Product {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Category getCategory() {
-		return category;
-	}
-	public void setCategory(Category category) {
-		this.category = category;
-	}
+//	public Category getCategory() {
+//		return category;
+//	}
+//	public void setCategory(Category category) {
+//		this.category = category;
+//	}
 	public double getPrice() {
 		return price;
 	}
@@ -40,7 +46,5 @@ public class Product {
 	public void setDiscount(double discount) {
 		this.discount = discount;
 	}
-	
-	
 
 }
