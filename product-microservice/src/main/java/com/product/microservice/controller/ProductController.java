@@ -18,10 +18,10 @@ public class ProductController {
 	private ProductService productService;
 	
 	@RequestMapping("/addProduct")
-	ResponseEntity<Product> addProduct(@RequestBody Product product)
+	public Product addProduct(@RequestBody Product product)
 	{
 		
-		return ResponseEntity.status(HttpStatus.CREATED).body(product);
+		return productService.saveProduct(product);
 	}
 
 }

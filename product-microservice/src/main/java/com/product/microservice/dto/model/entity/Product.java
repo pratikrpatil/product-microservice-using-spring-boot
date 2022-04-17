@@ -1,5 +1,8 @@
 package com.product.microservice.dto.model.entity;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Product {
 	
 	private int id;
